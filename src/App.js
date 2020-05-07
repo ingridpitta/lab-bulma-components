@@ -1,7 +1,14 @@
-import React from 'react';
+import React from "react";
+import Nav from "./Nav/nav";
+import Formfield from "./Formfield/formfield";
 
 const App = () => {
-  return <h1>Bulma</h1>;
+  return (
+    <>
+    <Nav />
+    <Formfield/>
+    </>
+    );
 };
 
 export default App;
