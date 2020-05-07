@@ -2,16 +2,14 @@ import React from "react";
 import "bulma/css/bulma.css";
 import "./formfield.css";
 
-const Formfield = () => {
+const Formfield = ({ label, type, placeholder }) => {
   return (
-    <React.Fragment>
-      <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
-      <FormField
-        label="Email"
-        type="email"
-        placeholder="e.g. alexsmith@gmail.com"
-      />
-    </React.Fragment>
+    <div class="field">
+      <label class="label">{label}</label>
+      <div class="control">
+        <input class="input" type={type} placeholder={placeholder} />
+      </div>
+    </div>
   );
 };
 

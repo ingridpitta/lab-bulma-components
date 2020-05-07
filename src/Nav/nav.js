@@ -1,4 +1,5 @@
 import React from "react";
+import CoolButton from "../CoolButton/CoolButton";
 import "bulma/css/bulma.css";
 import "./navbar.styles.css";
 
@@ -34,10 +35,8 @@ const Nav = () => {
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-link">Log in</a>
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
+              <CoolButton className="button is-link" text="Log in" />
+              <CoolButton className="button is-primary" text="Sign up" />
             </div>
           </div>
         </div>
